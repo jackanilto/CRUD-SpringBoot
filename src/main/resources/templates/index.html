@@ -71,7 +71,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr th:each="clientes : ${clientes}">
+                                <tr th:each="clientes : ${clientes}">  <!-- Fazemos um Foreach e acessamos atraves da variavel clientes -->
                                     <td><span th:text="${clientes.nomeCliente}"></span></td>
                                     <td><span th:text="${clientes.telefone}"></span></td>
                                     <td><span th:text="${clientes.email}"></span></td>
