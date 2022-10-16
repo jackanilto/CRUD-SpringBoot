@@ -29,4 +29,10 @@ public class ClienteController {
 
         return "redirect:/cliente";
     }
+
+    @RequestMapping("/deletar")
+    private String deletarCliente(long id){
+        cr.deleteById(id);
+        return "redirect:/cliente";
+    }
 }
